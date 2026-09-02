@@ -68,6 +68,18 @@ python line_monitor.py --frames ./test_images --model melaskary72-gmail-com/meta
 
 `test_images/` is the test split of the dataset version, downloaded from Roboflow. A real run over the 113-frame test split produced 7 alerts and 177 detections at 288ms median latency; see `sample_output/` for the alerts log, audit trail excerpt, and annotated frames.
 
+
+## Example detections
+
+Frames from the sample run with the model detections drawn on. Full set in [sample_output/annotated](sample_output/annotated).
+
+<img src="sample_output/annotated/crazing_123_jpg.rf.5fa827e0329106dc4bf6fbf83b5c433c.jpg" width="170">
+<img src="sample_output/annotated/crazing_131_jpg.rf.ec8871db0cab6b7e24a619aa6888f17b.jpg" width="170">
+<img src="sample_output/annotated/crazing_18_jpg.rf.cf0470b75f287bb8d308527e04523b2a.jpg" width="170">
+<img src="sample_output/annotated/crazing_243_jpg.rf.a1a26bcfd9233b43afc7c46f63f459d3.jpg" width="170">
+<img src="sample_output/annotated/inclusion_112_jpg.rf.6d53214886b4cab412960f64119bd3c7.jpg" width="170">
+<img src="sample_output/annotated/patches_102_jpg.rf.0828a48bce8a78a953cca7e5ca59f589.jpg" width="170">
+
 ## Runbook
 
 * **Alert fires:** open `alerts.jsonl`, pull the listed window frames from `annotated/`, confirm or dismiss. Dismissals are feedback: recurring false positives on one class mean the confidence floor or training data for that class needs work.
