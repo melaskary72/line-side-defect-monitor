@@ -37,7 +37,7 @@ A parallel Roboflow Workflow (model -> detections filter -> email notification b
 
 Trained on Roboflow from a fork of the NEU Metal Surface Defects database ([Universe dataset](https://universe.roboflow.com/sujitsa/metallic-surface-defect-detector), 1.4k images, CC / public domain). Six classes: scratches, patches, crazing, inclusion, pitted surface, rolled-in scale.
 
-Model: `YOUR_WORKSPACE/YOUR_PROJECT/1` (Roboflow 3.0 Object Detection, Fast). Metrics from the Roboflow training report: mAP@50 XX.X%, precision XX.X%, recall XX.X%.
+Model: `melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1` (Roboflow 3.0 Object Detection, Fast). Metrics from the Roboflow training report: mAP@50 XX.X%, precision XX.X%, recall XX.X%.
 
 ## Acceptance criteria
 
@@ -58,12 +58,12 @@ pip install -r requirements.txt
 export ROBOFLOW_API_KEY=your_key   # workspace settings -> API key. Never commit it.
 
 # Hosted inference
-python line_monitor.py --frames ./test_images --model YOUR_WORKSPACE/YOUR_PROJECT/1
+python line_monitor.py --frames ./test_images --model melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1
 
 # Edge inference: production-representative, survives connectivity loss
 # after weights are cached locally
 docker run -d --name rf-inference -p 9001:9001 roboflow/roboflow-inference-server-cpu
-python line_monitor.py --frames ./test_images --model YOUR_WORKSPACE/YOUR_PROJECT/1 --mode edge
+python line_monitor.py --frames ./test_images --model melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1 --mode edge
 ```
 
 `test_images/` is the test split of the dataset version, downloaded from Roboflow.
