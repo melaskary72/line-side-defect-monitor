@@ -37,7 +37,7 @@ A parallel Roboflow Workflow (model -> detections filter -> email notification b
 
 Trained on Roboflow from a fork of the NEU Metal Surface Defects database ([Universe dataset](https://universe.roboflow.com/sujitsa/metallic-surface-defect-detector), 1.4k images, CC / public domain). Six classes: scratches, patches, crazing, inclusion, pitted surface, rolled-in scale.
 
-Model: `melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1` (Roboflow 3.0 Object Detection, Fast). Metrics from the Roboflow training report: mAP@50 XX.X%, precision XX.X%, recall XX.X%.
+Model: `melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1` (Roboflow 3.0 Object Detection, Fast). Metrics from the Roboflow training report: mAP@50 67.1%, precision 66.2%, recall 66.6%.
 
 ## Acceptance criteria
 
