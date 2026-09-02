@@ -66,7 +66,7 @@ docker run -d --name rf-inference -p 9001:9001 roboflow/roboflow-inference-serve
 python line_monitor.py --frames ./test_images --model melaskary72-gmail-com/metallic-surface-defect-detector-39eee/1 --mode edge
 ```
 
-`test_images/` is the test split of the dataset version, downloaded from Roboflow.
+`test_images/` is the test split of the dataset version, downloaded from Roboflow. A real run over the 113-frame test split produced 7 alerts and 177 detections at 288ms median latency; see `sample_output/` for the alerts log, audit trail excerpt, and annotated frames.
 
 ## Runbook
 
